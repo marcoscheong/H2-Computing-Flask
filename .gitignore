@@ -1,0 +1,14 @@
+# Python bytecode (prevents __pycache__ folders)
+__pycache__/
+*.py[cod]
+
+# Environments (if you ever use a venv)
+venv/
+env/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Sensitive data (like API keys)
+.env

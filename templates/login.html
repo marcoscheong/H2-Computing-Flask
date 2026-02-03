@@ -1,0 +1,56 @@
+
+{% extends "layout.html" %}	
+
+{% block title %} MyWebApp {% endblock %}
+
+{% block content %}
+
+		
+		<h1> Login</h1>
+		<p1> Login to access your profile </p1>
+		
+		<form action = "/login" method = "post">
+		<table>
+			<tr>
+				<th>
+				<label for ="username"> Username </label> 
+				</th>
+			
+					
+				<td> 
+					<input type = "text" id = "username" name = "username"> 
+				</td>
+			</tr>
+		
+			<tr>
+				<th>
+
+						<label for = "password"> Password </label>
+					
+				</th>
+			
+				
+				<td>
+					<input type = 'password' id = 'password' name = 'password'>
+				</td>
+			
+			</tr>
+			
+			<tr>
+				<td colspan = 2> <p style = "color: red;">{{error_msg}} </p>
+				</td>
+			
+			</tr>
+			<tr>
+				<td colspan = 2> <p style = "color: green;" > {{success_msg}} </p>
+				</td>
+			</tr>
+			<tr>
+				<th> 
+						<input type = 'submit' value = 'login'>
+				</th>
+			</tr>
+		</table>
+		</form>
+{% endblock %}
+	
